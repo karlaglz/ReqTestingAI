@@ -1,5 +1,11 @@
 # Requiem-API
 
+![image](https://github.com/karlaglz/ReqTestingAI/assets/167153201/926add55-0f48-46b2-a313-659b68891978)
+
+
+Functional demo video: https://www.youtube.com/watch?v=NDmsCuVv5qs 
+
+
 This is the API for the Requiem project.
 
 Steps to run this project:
