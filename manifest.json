@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Requiem",
+  "version": "1.0",
+  "description": "Requiem, an AI SW engineering testing companion",
+  "permissions": ["tabs", "activeTab", "downloads"],
+  "icons": {
+    "16": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["html2canvas.js", "requiem_home.js"]
+    }
+  ]
+}

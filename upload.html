@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="home.css">
+    <title>Upload File</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <button id="backToMain" class="back-button" role="button">Back to Main</button>
+    <section class="extension-container">
+        <h1>Upload your file</h1>
+        <div class="file-input-container">
+            <input type="file" id="file-input" name="file-input" class="file-input" accept=".txt">
+            <label for="file-input" class="file-input-label">Choose a .txt file</label>
+            <span id="file-name" class="file-name">No file selected</span>
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <span id="upload-status" class="upload-status"></span>
+            <textarea id="requirements-input" class="file-content" rows="10" cols="30"
+                placeholder="The content of the txt file will appear here..." disabled="true"></textarea>
+        </div>
+        <br>
+        <button id="analyzeWebPage" class="button-style1" role="button">Analyze Web Page</button>
+        <div id="loading-spinner"></div>
+        <div id="image-link-container" style="display: none;">
+            <div id="image-link" style="cursor: pointer; color: blue; text-decoration: underline;"></div>
+        </div>
+        <div id="comparison-container" style="display: none;">
+            <h2>Comparison</h2>
+            <span id="comparison"></span>
+        </div>
+        <button id="downloadReport" class="button-style1" role="button">Download report</button>
+    </section>
+
+    <script src="requiem_home.js"></script>
+    <script src="upload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="home.css">
+  <title>Mi extensión</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <section class="extension-container">
+    <h1>Welcome to Requiem AI</h1>
+    <label for="requirements-input">List your requirements to analyze:</label>
+    <textarea class="requirements-input" id="requirements-input" name="requirements-input" rows="4" cols="50"
+      placeholder="Ej. 1. The page must have a blue button at the bottom of the screen. The page must have an image of a cat  3. ..."></textarea>
+    <button id="analyzeWebPage" class="button-style1" role="button">Analyze Web Page</button>
+    <div id="loading-spinner"></div>
+    <div id="image-link-container" style="display: none;">
+      <div id="image-link" style="cursor: pointer; color: blue; text-decoration: underline;"></div>
+    </div>
+    <div id="comparison-container" style="display: none;">
+      <h2>Comparison</h2>
+      <span id="comparison"></span>
+    </div>
+  </section>
+
+  <script src="html2canvas.js"></script>
+  <script src="requiem_home.js"></script>
+</body>
+
+</html>
